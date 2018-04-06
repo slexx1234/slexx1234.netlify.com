@@ -44,6 +44,16 @@
                      :description="$t('projects.author-besmarter')"
                      site="https://avtor.besmarter.ru"
                      date="2018"></project>
+
+            <project title="Bid Manager"
+                     :tags="['Laravel','PHP','MySql','Cron']"
+                     :images="[
+                        '/portfolio/bid-manager/1.png',
+                        '/portfolio/bid-manager/2.png',
+                        '/portfolio/bid-manager/3.png',
+                     ]"
+                     :description="$t('projects.bid-manager')"
+                     date="2017"></project>
         </div>
     </screen>
 </template>
