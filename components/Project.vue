@@ -30,14 +30,13 @@
         &__image {
             max-width: 100%;
             height: auto;
-            margin-bottom: 1rem;
         }
         &__inner {
             padding: 1rem;
             padding-bottom: 0;
         }
         &__title {
-            margin-bottom: 1rem;
+            margin: 1rem 0;
         }
         &__date {
             float: right;
