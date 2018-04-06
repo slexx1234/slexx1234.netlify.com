@@ -18,6 +18,9 @@
         background: #fff;
         max-width: 600px;
         min-width: 300px;
+        @media (max-width: 600px) {
+            max-width: 400px;
+        }
         width: 100%;
         margin: auto;
         padding: 2rem;

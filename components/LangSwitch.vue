@@ -22,6 +22,9 @@
         }
         &__name {
             padding: 0 1rem;
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
     }
 </style>

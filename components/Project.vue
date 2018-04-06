@@ -6,7 +6,9 @@
                 {{ title }}
                 <span v-if="date" class="project__date" v-text="date"></span>
             </h3>
-            <span class="project__tag" v-for="tag in tags" v-text="tag" :key="tag"></span>
+            <div class="project__tags">
+                <span class="project__tag" v-for="tag in tags" v-text="tag" :key="tag"></span>
+            </div>
             <p class="project__description" v-if="description" v-text="description"></p>
         </div>
         <div class="project__links">
@@ -42,19 +44,20 @@
             color: #636e72;
             font-weight: 400;
         }
+        &__tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
         &__tag {
             background: #0984e3;
             padding: 0.5rem 1rem;
             color: #fff;
             margin-bottom: 1rem;
-            + .project__tag {
-                margin-left: 1rem;
-            }
+            margin-right: 1rem;
         }
         &__links {
             background: #0984e3;
             padding: 1rem;
-            margin-top: 1rem;
             img {
                 width: 2rem;
                 height: 2rem;

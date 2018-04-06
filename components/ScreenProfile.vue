@@ -54,6 +54,9 @@
     .profile {
         background: #fff;
         max-width: 600px;
+        @media (max-width: 600px) {
+            max-width: 400px;
+        }
         margin: auto;
         width: 100%;
 
@@ -79,15 +82,25 @@
         }
         &__inner {
             display: flex;
+            @media (max-width: 600px) {
+                flex-direction: column;
+            }
         }
         &__avatar {
             width: 200px;
             height: 200px;
             margin: 2rem;
+            @media (max-width: 600px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         &__info {
             padding: 2rem;
             padding-left: 0;
+            @media (max-width: 600px) {
+                padding-left: 2rem;
+            }
         }
         &__header {
             font-weight: 200;

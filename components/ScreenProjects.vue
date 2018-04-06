@@ -26,6 +26,12 @@
         .project {
             break-inside: avoid;
         }
+        @media (max-width: 1500px) {
+            column-count: 2;
+        }
+        @media (max-width: 1000px) {
+            column-count: 1;
+        }
     }
 </style>
 
