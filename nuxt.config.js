@@ -9,6 +9,7 @@ module.exports = {
             { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
         ],
         link: [
+            { href: 'https://fonts.googleapis.com/css?family=Scada', rel: 'stylesheet' },
             { rel: 'icon', type: 'image/png', href: '/favicon.png' },
             { rel: 'mask-icon', href: '/favicon-black.svg', color: '#0984e3' },
             { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -22,8 +23,8 @@ module.exports = {
     },
 
     plugins: [
-        '~/plugins/i18n.js',
-        '~/plugins/lightbox.js',
+        { src: '~plugins/i18n.js', ssr: true },
+        { src: '~plugins/lightbox.js', ssr: false },
     ],
 
     generate: {
