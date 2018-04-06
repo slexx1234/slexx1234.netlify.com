@@ -9,7 +9,9 @@ module.exports = {
             { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+            { rel: 'mask-icon', href: '/favicon-black.svg', color: '#0984e3' },
+            { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         ]
     },
 
