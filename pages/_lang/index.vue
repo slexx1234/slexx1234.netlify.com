@@ -3,6 +3,7 @@
         <lang-switch/>
         <screen-profile/>
         <screen-skills/>
+        <screen-companies/>
         <screen-projects/>
     </page>
 </template>
@@ -13,6 +14,7 @@
     import ScreenProfile from '../../components/ScreenProfile';
     import ScreenSkills from '../../components/ScreenSkills';
     import ScreenProjects from '../../components/ScreenProjects';
+    import ScreenCompanies from '../../components/ScreenCompanies';
 
     export default {
         components: {
@@ -21,6 +23,7 @@
             ScreenSkills,
             LangSwitch,
             ScreenProjects,
+            ScreenCompanies,
         }
     }
 </script>
