@@ -2,6 +2,12 @@
     <canvas class="rain"></canvas>
 </template>
 
+<style>
+    .rain {
+        background: #000;
+    }
+</style>
+
 <script>
     export default {
         data() {
