@@ -5,11 +5,13 @@
         <screen-skills/>
         <screen-companies/>
         <screen-projects/>
+        <copyrights/>
     </page>
 </template>
 
 <script>
     import Page from '../../components/Page';
+    import Copyrights from '../../components/Copyrights';
     import LangSwitch from '../../components/LangSwitch';
     import ScreenProfile from '../../components/ScreenProfile';
     import ScreenSkills from '../../components/ScreenSkills';
@@ -19,6 +21,7 @@
     export default {
         components: {
             Page,
+            Copyrights,
             ScreenProfile,
             ScreenSkills,
             LangSwitch,
