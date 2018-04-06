@@ -53,6 +53,10 @@
             color: #fff;
             margin-bottom: 1rem;
             margin-right: 1rem;
+            &::selection {
+                background: #fff;
+                color: #0984e3;
+            }
         }
         &__links {
             background: #0984e3;
