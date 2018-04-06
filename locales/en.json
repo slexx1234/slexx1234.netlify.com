@@ -1,0 +1,21 @@
+{
+  "profile": {
+    "hello": "Hello!",
+    "name_prefix": "I'm",
+    "name": "Shchepkin Aleksey",
+    "job": "Developer",
+    "age": "Age",
+    "city": "City",
+    "moscow": "Moscow",
+    "phone": "Phone",
+    "freelance": "Freelance",
+    "available": "Available",
+    "description": "I am a full stack developer, and this saves you from having to hire two different people. I work directly (without middlemen). I work more than 5 years in the field of web development."
+  },
+  "skills": {
+    "header": "My skills"
+  },
+  "projects": {
+    "this": "This web site"
+  }
+}
