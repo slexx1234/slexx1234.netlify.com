@@ -16,7 +16,10 @@
     "header": "My skills"
   },
   "projects": {
-    "this": "This web site"
+    "this": "This web site",
+    "crm-besmarter": "CRM компании БиСмартер, автоматизирует бизнес процессы, ведёт статистику и учёт",
+    "author-besmarter": "Кабинет авторов БиСмартер, авторы получают заказы, договариваются о цене, сдают работу",
+    "icons-enricher": "Плагин WordPress добовляющий возможнось вставлять иконки в посты, меню, заголовки..."
   },
   "companies": {
     "header": "My career",

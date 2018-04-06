@@ -7,10 +7,10 @@
                 {{ title }}
                 <span v-if="date" class="project__date" v-text="date"></span>
             </h3>
+            <p class="project__description" v-if="description" v-text="description"></p>
             <div class="project__tags">
                 <span class="project__tag" v-for="tag in tags" v-text="tag" :key="tag"></span>
             </div>
-            <p class="project__description" v-if="description" v-text="description"></p>
         </div>
         <div class="project__links" v-if="github || site">
             <a v-if="github" :href="github">

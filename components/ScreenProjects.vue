@@ -16,6 +16,7 @@
                         '/portfolio/icons-enricher/4.gif',
                      ]"
                      date="2017"
+                     :description="$t('projects.icons-enricher')"
                      site="https://wordpress.org/plugins/icons-enricher/"></project>
 
             <project title="CRM BeSmarter"
@@ -26,7 +27,23 @@
                         '/portfolio/crm-besmarter/3.png',
                         '/portfolio/crm-besmarter/4.png',
                      ]"
+                     :description="$t('projects.crm-besmarter')"
                      date="2017 - 2018"></project>
+
+            <project title="Author BeSmarter"
+                     :tags="['Laravel','PHP','JS','Vue','Vuex','Sockets','Vuetify','SPA']"
+                     :images="[
+                        '/portfolio/author-besmarter/1.png',
+                        '/portfolio/author-besmarter/2.png',
+                        '/portfolio/author-besmarter/3.png',
+                        '/portfolio/author-besmarter/4.png',
+                        '/portfolio/author-besmarter/5.png',
+                        '/portfolio/author-besmarter/6.png',
+                        '/portfolio/author-besmarter/7.png',
+                     ]"
+                     :description="$t('projects.author-besmarter')"
+                     site="https://avtor.besmarter.ru"
+                     date="2018"></project>
         </div>
     </screen>
 </template>
