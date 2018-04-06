@@ -1,7 +1,8 @@
 <template>
-    <div class="project" @click="onClick">
+    <div class="project">
         <div class="project__inner">
-            <img class="project__image" :src="image">
+            <lightbox v-if="images && images.length" class="project__image" :thumbnail="images[0]" :images="images"/>
+            <img class="project__image" :src="image" v-else>
             <h3 class="project__title">
                 {{ title }}
                 <span v-if="date" class="project__date" v-text="date"></span>
@@ -11,7 +12,7 @@
             </div>
             <p class="project__description" v-if="description" v-text="description"></p>
         </div>
-        <div class="project__links">
+        <div class="project__links" v-if="github || site">
             <a v-if="github" :href="github">
                 <img src="/github.svg">
             </a>
@@ -26,7 +27,6 @@
     .project {
         background: #fff;
         margin-bottom: 2rem;
-        cursor: pointer;
         &__image {
             max-width: 100%;
             height: auto;
@@ -74,6 +74,9 @@
             }
         }
     }
+    .lightbox {
+        z-index: 100000;
+    }
 </style>
 
 <script>
@@ -86,12 +89,7 @@
             date: String,
             github: String,
             site: String,
-        },
-
-        methods: {
-            onClick() {
-                window.open(this.site || this.github);
-            },
+            images: Array,
         },
     }
 </script>
