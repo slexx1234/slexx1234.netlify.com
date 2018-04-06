@@ -15,12 +15,7 @@ module.exports = {
         ]
     },
 
-    /*
-    ** Customize the progress bar color
-    */
-    loading: {
-        color: '#0984e3'
-    },
+    loading: 'components/Loading.vue',
 
     router: {
         middleware: 'i18n'
