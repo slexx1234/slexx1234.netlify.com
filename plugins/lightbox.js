@@ -1,4 +1,6 @@
 import Vue from 'vue';
 import Lightbox from 'vue-pure-lightbox';
 
-Vue.use(Lightbox);
+if (process.browser) {
+    Vue.use(Lightbox);
+}
