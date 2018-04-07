@@ -48,7 +48,7 @@
                 //afterinitial calculations
                 let size = w/total;
                 let occupation = w/total;
-                let repaintColor = 'rgba(0, 0, 0, .04)';
+                let repaintColor = 'rgba(0,0,0,0.1)';
                 let colors = [];
                 let dots = [];
                 let dotsVel = [];

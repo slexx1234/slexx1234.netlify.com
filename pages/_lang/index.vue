@@ -27,6 +27,14 @@
             LangSwitch,
             ScreenProjects,
             ScreenCompanies,
-        }
+        },
+        head() {
+            return {
+                title: this.$t('profile.name'),
+                htmlAttrs: {
+                    lang: this.$store.state.locale
+                },
+            };
+        },
     }
 </script>
