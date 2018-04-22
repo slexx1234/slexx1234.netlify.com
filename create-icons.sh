@@ -1,5 +1,7 @@
 #!/bin/bash
 
+convert -density 10000 -resize 36 -background none ./static/images/favicons/favicon.svg ./static/images/favicons/favicon.png
+
 convert -density 10000 -resize 36 -background none ./static/images/favicons/favicon.svg ./static/images/favicons/android-36.png
 convert -density 10000 -resize 48 -background none ./static/images/favicons/favicon.svg ./static/images/favicons/android-48.png
 convert -density 10000 -resize 72 -background none ./static/images/favicons/favicon.svg ./static/images/favicons/android-72.png
