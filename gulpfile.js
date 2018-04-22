@@ -16,7 +16,7 @@ gulp.task('webp', () => {
     gulp.src(['./dist/images/**/*.png', './dist/images/**/*.jpg', './dist/images/**/*.jpeg', '!./dist/images/favicons/*.png'])
         .pipe(plumber())
         .pipe(webp())
-        .pipe(gulp.dest('./static/images'));
+        .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('svg', function () {
