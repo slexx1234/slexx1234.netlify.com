@@ -27,6 +27,7 @@ module.exports = {
             { property: 'og:image:width', content: '200' },
             { property: 'og:image:height', content: '200' },
             { property: 'og:type', content: 'profile' },
+            { property: 'og:url', content: 'https://slexx1234.netlify.com/' },
 
             // Поисковики
             { name: 'yandex-verification', content: '4e0eaed9675b963a' },
