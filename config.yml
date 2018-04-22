@@ -1,8 +1,0 @@
-title: "slexx1234.netlify.com"
-description: ""
-baseurl: ""
-url: ""
-markdown: kramdown
-permalink: pretty
-include:
-  - "_redirects"
