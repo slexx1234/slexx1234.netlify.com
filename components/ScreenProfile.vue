@@ -72,7 +72,7 @@
 
         &__hello {
             display: inline-block;
-            background: #0984e3;
+            background: #096ec5;
             color: #fff;
             font-weight: bold;
             line-height: 1;
@@ -88,7 +88,7 @@
                 top: 100%;
                 left: 0;
                 border: 0.5rem solid transparent;
-                border-top-color: #0984e3;
+                border-top-color: #096ec5;
             }
         }
         &__inner {
@@ -151,7 +151,7 @@
             padding-top: 0;
         }
         &__links {
-            background: #0984e3;
+            background: #096ec5;
             padding: 1rem;
             text-align: center;
             color: #fff;

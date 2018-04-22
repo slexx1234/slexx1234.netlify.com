@@ -31,7 +31,7 @@
             label: String,
             color: {
                 type: String,
-                default: '#0984e3',
+                default: '#096ec5',
             },
         }
     }

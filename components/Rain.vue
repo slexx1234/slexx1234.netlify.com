@@ -72,7 +72,7 @@
                         let currentY = dots[i] - 1;
                         dots[i] += dotsVel[i] += accelleration;
 
-                        ctx.fillStyle = '#0984e3';
+                        ctx.fillStyle = '#096ec5';
                         ctx.fillRect(occupation * i, currentY, size, dotsVel[i] + 1);
 
                         if(dots[i] > h && Math.random() < .001){

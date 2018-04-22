@@ -19,7 +19,7 @@
                 canSuccess: true,
                 duration: 5000,
                 height: '2px',
-                color: '#0984e3',
+                color: '#096ec5',
                 failedColor: 'red',
                 timeout: null,
             }

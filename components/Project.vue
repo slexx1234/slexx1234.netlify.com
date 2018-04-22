@@ -50,7 +50,7 @@
             flex-wrap: wrap;
         }
         &__tag {
-            background: #0984e3;
+            background: #096ec5;
             padding: 0.5rem 1rem;
             color: #fff;
             font-weight: bold;
@@ -58,11 +58,11 @@
             margin-right: 1rem;
             &::selection {
                 background: #fff;
-                color: #0984e3;
+                color: #096ec5;
             }
         }
         &__links {
-            background: #0984e3;
+            background: #096ec5;
             padding: 1rem;
             img {
                 width: 2rem;
