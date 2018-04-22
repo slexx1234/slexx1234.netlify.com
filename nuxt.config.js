@@ -36,8 +36,6 @@ module.exports = {
             { name: 'msvalidate.01', content: '7E04FF9455E17D24E4D53F0C881E418C' },
         ],
         link: [
-            { href: 'https://fonts.googleapis.com/css?family=Scada', rel: 'stylesheet' },
-
             // Icons
             { rel: 'apple-touch-icon', sizes: '57x57', href: '/images/favicons/ios-57.png' },
             { rel: 'apple-touch-icon', sizes: '60x60', href: '/images/favicons/ios-60.png' },
