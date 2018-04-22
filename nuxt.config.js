@@ -27,6 +27,12 @@ module.exports = {
             { property: 'og:image:width', content: '200' },
             { property: 'og:image:height', content: '200' },
             { property: 'og:type', content: 'profile' },
+
+            // Поисковики
+            { name: 'yandex-verification', content: '4e0eaed9675b963a' },
+            { name: 'google-site-verification', content: 'j_6szK19CBprPSt4b5qxaLIvx7IitJWx6tyzkWgxFno' },
+            { name: 'wmail-verification', content: '6eed32ac2f07e09a7c81048024a14f15' },
+            { name: 'msvalidate.01', content: '7E04FF9455E17D24E4D53F0C881E418C' },
         ],
         link: [
             { href: 'https://fonts.googleapis.com/css?family=Scada', rel: 'stylesheet' },
