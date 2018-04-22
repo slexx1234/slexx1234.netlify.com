@@ -1,2 +1,0 @@
-redirects = [
-  {from = "http://slexx1234.netlify.com/*", to = "https://slexx1234.netlify.com/:splat", status =  301}]
