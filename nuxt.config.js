@@ -45,6 +45,9 @@ module.exports = {
             { rel: 'mask-icon', href: '/images/favicons/favicon-black.svg', color: '#0984e3' },
             { rel: 'icon', type: 'image/svg+xml', href: '/images/favicons/favicon.svg' },
         ],
+        script: [
+            { charset: 'UTF-8', src: 'https://mc.yandex.ru/metrika/watch.js', async: true },
+        ],
     },
 
     loading: 'components/Loading.vue',
