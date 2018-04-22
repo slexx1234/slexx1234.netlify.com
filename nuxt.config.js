@@ -47,7 +47,6 @@ module.exports = {
         ],
         script: [
             { charset: 'UTF-8', src: 'https://mc.yandex.ru/metrika/watch.js', async: true },
-            { charset: 'UTF-8', src: 'https://cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/0add91d8d83941956f19147f6485deb1_1.js', async: true },
         ],
     },
 
@@ -60,7 +59,7 @@ module.exports = {
     plugins: [
         { src: '~plugins/i18n.js', ssr: true },
         { src: '~plugins/lightbox.js', ssr: false },
-        // { src: '~plugins/sw.js', ssr: false },
+        { src: '~plugins/sw.js', ssr: false },
         { src: '~plugins/metrika.js', ssr: false },
     ],
 
