@@ -30,6 +30,7 @@
             width: 100px;
             height: 100px;
             margin-right: 1rem;
+            flex: 1 1;
         }
         &__dates {
             float: right;
