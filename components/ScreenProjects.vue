@@ -5,6 +5,7 @@
                      :tags="['HTML5','CSS3','JS','VueJS','Nuxt','PWA','SPA','SEO']"
                      image="/images/portfolio/this.png"
                      date="06.04.2018"
+                     site="https://slexx1234.netlify.com"
                      github="https://github.com/slexx1234/slexx1234.netlify.com"></project>
 
             <project title="Icons enricher"

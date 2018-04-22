@@ -15,6 +15,8 @@
     "locale_alternate": "en_EN"
   },
   "profile": {
+    "sex": "Пол",
+    "male": "Мужской",
     "avatar": "Фотография",
     "hello": "Привет!",
     "name_prefix": "Я",

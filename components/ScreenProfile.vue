@@ -1,12 +1,12 @@
 <template>
     <screen class="screen--profile">
-        <div class="profile">
+        <div class="profile" itemscope itemtype="http://schema.org/Person">
             <div class="profile__inner">
-                <img class="profile__avatar" src="/images/avatar.png" :alt="$t('profile.avatar')">
+                <img class="profile__avatar" itemprop="image" src="/images/avatar.png" :alt="$t('profile.avatar')">
                 <div class="profile__info">
                     <span class="profile__hello">{{ $t('profile.hello')}}</span>
-                    <h1 class="profile__header">{{ $t('profile.name_prefix')}} <span>{{ $t('profile.name') }}</span></h1>
-                    <p class="profile__job">{{ $t('profile.job') }}</p>
+                    <h1 class="profile__header">{{ $t('profile.name_prefix')}} <span itemprop="name">{{ $t('profile.name') }}</span></h1>
+                    <p class="profile__job" itemprop="jobTitle">{{ $t('profile.job') }}</p>
 
                     <div class="profile__divider"></div>
 
@@ -17,16 +17,20 @@
                                 <td>19</td>
                             </tr>
                             <tr>
+                                <th>{{ $t('profile.sex') }}</th>
+                                <td itemprop="gender">{{ $t('profile.male') }}</td>
+                            </tr>
+                            <tr>
                                 <th>{{ $t('profile.city') }}</th>
-                                <td>{{ $t('profile.moscow') }}</td>
+                                <td itemprop="address">{{ $t('profile.moscow') }}</td>
                             </tr>
                             <tr>
                                 <th>E-Mail</th>
-                                <td><a href="mailto:slexx1234@gmail.com">slexx1234@gmail.com</a></td>
+                                <td><a href="mailto:slexx1234@gmail.com" itemprop="email">slexx1234@gmail.com</a></td>
                             </tr>
                             <tr>
                                 <th>{{ $t('profile.phone') }}</th>
-                                <td><a href="tel:+79670144226">+7 967 014 42 26</a></td>
+                                <td><a href="tel:+79670144226" itemprop="telephone">+7 967 014 42 26</a></td>
                             </tr>
                             <tr>
                                 <th>Skype</th>
@@ -40,8 +44,11 @@
                     </table>
                 </div>
             </div>
-            <div class="profile__description">{{ $t('profile.description') }}</div>
+            <div class="profile__description" itemprop="disambiguatingDescription">{{ $t('profile.description') }}</div>
             <nav class="profile__links">
+                <a href="https://slexx1234.netlify.com/" itemprop="url">
+                    <img src="/images/site.svg" :alt="$t('social.site')">
+                </a>
                 <a href="https://github.com/slexx1234">
                     <img src="/images/github.svg" :alt="$t('social.github')">
                 </a>
