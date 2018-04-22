@@ -3,7 +3,12 @@
         <div class="projects">
             <project :title="$t('projects.this')"
                      :tags="['HTML5','CSS3','JS','VueJS','Nuxt','PWA','SPA','SEO']"
-                     :image="'/images/portfolio/this.' + ($webp ? 'webp' : 'png')"
+                     :images="[
+                        '/images/portfolio/this/1.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/this/2.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/this/3.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/this/4.' + ($webp ? 'webp' : 'png'),
+                     ]"
                      date="06.04.2018"
                      site="https://slexx1234.netlify.com"
                      github="https://github.com/slexx1234/slexx1234.netlify.com"></project>
