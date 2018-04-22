@@ -2,10 +2,10 @@
     <screen class="screen--projects">
         <div class="projects">
             <project :title="$t('projects.this')"
-                     :tags="['HTML5','CSS3','JS','VueJS','Nuxt']"
+                     :tags="['HTML5','CSS3','JS','VueJS','Nuxt','PWA','SPA','SEO']"
                      image="/images/portfolio/this.png"
                      date="06.04.2018"
-                     github="https://github.com/slexx1234/resume"></project>
+                     github="https://github.com/slexx1234/slexx1234.netlify.com"></project>
 
             <project title="Icons enricher"
                      :tags="['WordPress','PHP','JS','VueJS']"
