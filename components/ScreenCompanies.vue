@@ -3,7 +3,7 @@
         <div class="companies">
             <h2 class="companies__header">{{ $t('companies.header') }}</h2>
 
-            <company logo="/logos/besmarter.png" name="BeSmarter" :description="$t('companies.besmarter.description')" dates="2017 - 2018"/>
+            <company logo="/images/logos/besmarter.png" name="BeSmarter" :description="$t('companies.besmarter.description')" dates="2017 - 2018"/>
             <company :name="$t('companies.freelance.name')" :description="$t('companies.freelance.description')" dates="2016 - 2017"/>
         </div>
     </screen>

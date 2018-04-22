@@ -1,8 +1,10 @@
 <template>
     <div class="project">
         <div class="project__inner">
-            <lightbox v-if="images && images.length" class="project__image" :thumbnail="images[0]" :images="images"/>
-            <img class="project__image" :src="image" v-else>
+            <no-ssr>
+                <lightbox v-if="images && images.length" class="project__image" :thumbnail="images[0]" :images="images" :alternate-text="title"/>
+                <img class="project__image" :src="image" :alt="title" v-else>
+            </no-ssr>
             <h3 class="project__title">
                 {{ title }}
                 <span v-if="date" class="project__date" v-text="date"></span>
@@ -14,10 +16,10 @@
         </div>
         <div class="project__links" v-if="github || site">
             <a v-if="github" :href="github">
-                <img src="/github.svg">
+                <img src="/images/github.svg" :alt="$t('social.github')">
             </a>
             <a v-if="site" :href="site">
-                <img src="/site.svg">
+                <img src="/images/site.svg" :alt="$t('social.site')">
             </a>
         </div>
     </div>
@@ -51,6 +53,7 @@
             background: #0984e3;
             padding: 0.5rem 1rem;
             color: #fff;
+            font-weight: bold;
             margin-bottom: 1rem;
             margin-right: 1rem;
             &::selection {

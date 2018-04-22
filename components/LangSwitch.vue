@@ -1,6 +1,6 @@
 <template>
     <div class="lang-switch" @click="onClick">
-        <img :src="src" class="lang-switch__icon">
+        <img :src="src" class="lang-switch__icon" :alt="name">
         <span class="lang-switch__name" v-text="name"></span>
     </div>
 </template>
@@ -33,8 +33,8 @@
     export default {
         computed: {
             src() {
-                if (this.$store.state.locale === 'en') return '/ru.svg';
-                return '/en.svg';
+                if (this.$store.state.locale === 'en') return '/images/ru.svg';
+                return '/images/en.svg';
             },
             name() {
                 if (this.$store.state.locale === 'en') return 'Русский';

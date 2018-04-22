@@ -1,7 +1,7 @@
 <template>
     <div class="company">
         <div class="company__inner">
-            <img v-if="logo" :src="logo" class="company__logo">
+            <img v-if="logo" :src="logo" :alt="name" class="company__logo">
             <div class="company__info">
                 <h3 class="company__name">
                     {{ name }}

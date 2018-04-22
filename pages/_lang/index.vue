@@ -30,10 +30,28 @@
         },
         head() {
             return {
-                title: this.$t('profile.name'),
+                title: this.$t('seo.title'),
+                description: this.$t('seo.description'),
                 htmlAttrs: {
-                    lang: this.$store.state.locale
+                    lang: this.$store.state.locale,
                 },
+                link: [
+                    { rel: 'manifest', href: '/manifest-' + this.$store.state.locale + '.json', }
+                ],
+                meta: [
+                    // Open Graph
+                    { name: 'og:title', content: this.$t('open_graph.title') },
+                    { name: 'og:description', content: this.$t('open_graph.description') },
+                    { name: 'og:locale', content: this.$t('open_graph.locale') },
+                    { name: 'og:locale:alternate', content: this.$t('open_graph.locale_alternate') },
+                    { name: 'og:profile:first_name', content: this.$t('open_graph.first_name') },
+                    { name: 'og:profile:last_name', content: this.$t('open_graph.last_name') },
+                    { name: 'og:profile:username', content: this.$t('open_graph.username') },
+                    { name: 'og:profile:gender', content: this.$t('open_graph.gender') },
+
+                    // SEO
+                    { name: 'author', content: this.$t('seo.author') },
+                ],
             };
         },
     }

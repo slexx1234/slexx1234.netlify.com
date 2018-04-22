@@ -1,5 +1,21 @@
 {
+  "seo": {
+    "title": "PHP Developer Shchepkin Aleksey",
+    "author": "Shchepkin Aleksey",
+    "description": "I am a full stack developer, and this saves you from having to hire two different people. I work directly (without middlemen). I work more than 5 years in the field of web development."
+  },
+  "open_graph": {
+    "first_name": "Aleksey",
+    "last_name": "Shchepkin",
+    "username": "slexx1234",
+    "gender": "Male",
+    "title": "PHP Developer Shchepkin Aleksey",
+    "description": "I am a full stack developer, and this saves you from having to hire two different people. I work directly (without middlemen). I work more than 5 years in the field of web development.",
+    "locale": "en_EN",
+    "locale_alternate": "ru_RU"
+  },
   "profile": {
+    "avatar": "Avatar",
     "hello": "Hello!",
     "name_prefix": "I'm",
     "name": "Shchepkin Aleksey",
@@ -31,5 +47,10 @@
       "name": "Freelance",
       "description": "Занимался самыми разнообразными задачами начиная от вёрстки заканчивая дизайном и программированием"
     }
+  },
+  "social": {
+    "github": "GitHub",
+    "site": "Site",
+    "stackoverflow": "StackOverflow"
   }
 }

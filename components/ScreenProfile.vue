@@ -2,7 +2,7 @@
     <screen class="screen--profile">
         <div class="profile">
             <div class="profile__inner">
-                <img class="profile__avatar" src="/avatar.png">
+                <img class="profile__avatar" src="/images/avatar.png" :alt="$t('profile.avatar')">
                 <div class="profile__info">
                     <span class="profile__hello">{{ $t('profile.hello')}}</span>
                     <h1 class="profile__header">{{ $t('profile.name_prefix')}} <span>{{ $t('profile.name') }}</span></h1>
@@ -43,7 +43,10 @@
             <div class="profile__description">{{ $t('profile.description') }}</div>
             <nav class="profile__links">
                 <a href="https://github.com/slexx1234">
-                    <img src="/github.svg">
+                    <img src="/images/github.svg" :alt="$t('social.github')">
+                </a>
+                <a href="https://ru.stackoverflow.com/users/293390/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%A9%D0%B5%D0%BF%D0%BA%D0%B8%D0%BD?tab=profile">
+                    <img src="/images/stackoverflow.svg" :alt="$t('social.stackoverflow')">
                 </a>
             </nav>
         </div>
@@ -64,6 +67,7 @@
             display: inline-block;
             background: #0984e3;
             color: #fff;
+            font-weight: bold;
             line-height: 1;
             padding: 0.5rem 1rem;
             margin-bottom: 1rem;
