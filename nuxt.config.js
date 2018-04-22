@@ -57,6 +57,7 @@ module.exports = {
         { src: '~plugins/i18n.js', ssr: true },
         { src: '~plugins/lightbox.js', ssr: false },
         { src: '~plugins/sw.js', ssr: false },
+        { src: '~plugins/metrica.js', ssr: false },
     ],
 
     generate: {
