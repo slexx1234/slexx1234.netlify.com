@@ -66,10 +66,37 @@ module.exports = {
         { src: '~plugins/lightbox.js', ssr: false },
         { src: '~plugins/sw.js', ssr: false },
         { src: '~plugins/metrika.js', ssr: false },
+        { src: '~plugins/webp.js' },
     ],
 
     generate: {
         routes: ['/', '/ru'],
+        minify: {
+            collapseBooleanAttributes: true,
+            collapseWhitespace: true,
+            decodeEntities: true,
+            minifyCSS: true,
+            minifyJS: true,
+            processConditionalComments: true,
+            removeAttributeQuotes: true,
+            removeComments: true,
+            removeEmptyAttributes: true,
+            removeOptionalTags: true,
+            removeRedundantAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            removeTagWhitespace: true,
+            sortAttributes: true,
+            sortClassName: true,
+            trimCustomFragments: true,
+            useShortDoctype: true,
+        },
+    },
+
+    render: {
+        gzip: { threshold: 9 },
+        http2: { push: true },
+        ssr: true,
     },
 
     /*
@@ -79,15 +106,15 @@ module.exports = {
         /*
         ** Run ESLint on save
         */
-        extend (config, { isDev, isClient }) {
+        extend(config, {isDev, isClient}) {
             if (isDev && isClient) {
                 config.module.rules.push({
                     enforce: 'pre',
                     test: /\.(js|vue)$/,
                     loader: 'eslint-loader',
                     exclude: /(node_modules)/
-                })
+                });
             }
-        }
-    }
+        },
+    },
 };
