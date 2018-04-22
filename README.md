@@ -1,22 +1,16 @@
-# Resume
+# slexx1234.netlify.com
 
-> My resume, site card
+Привет! Это репозиторий моей [личной странички](https://slexx1234.netlify.com).
 
-## Build Setup
+## Запуск
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+git clone git@github.com:slexx1234/slexx1234.netlify.com.git
+cd slexx1234.netlify.com
+npm i
+npm run dev
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+Всё! Открываем по [localhost:3000](http://localhost:3000) и радуемся результату.
+Если необходимо `https` комманда `npm run secure` создаст тунель к `localhost`,
+вы даже сможете кому то показать сие творение.
