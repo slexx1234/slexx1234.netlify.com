@@ -1,4 +1,4 @@
-if ('serviceWorker' in navigator) {
+if (process.browser && process.env.NODE_ENV !== 'development' && 'serviceWorker' in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker
             .register('/sw.js')

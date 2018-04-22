@@ -22,11 +22,11 @@ module.exports = {
             { name: 'twitter:creator', content: '@slexx1234' },
 
             // Open Graph
-            { name: 'og:image', content: '/images/avatar.png' },
-            { name: 'og:image:type', content: 'image/png' },
-            { name: 'og:image:width', content: '200' },
-            { name: 'og:image:height', content: '200' },
-            { name: 'og:type', content: 'profile' },
+            { property: 'og:image', content: '/images/avatar.png' },
+            { property: 'og:image:type', content: 'image/png' },
+            { property: 'og:image:width', content: '200' },
+            { property: 'og:image:height', content: '200' },
+            { property: 'og:type', content: 'profile' },
         ],
         link: [
             { href: 'https://fonts.googleapis.com/css?family=Scada', rel: 'stylesheet' },
@@ -60,7 +60,7 @@ module.exports = {
         { src: '~plugins/i18n.js', ssr: true },
         { src: '~plugins/lightbox.js', ssr: false },
         { src: '~plugins/sw.js', ssr: false },
-        { src: '~plugins/metrica.js', ssr: false },
+        { src: '~plugins/metrika.js', ssr: false },
     ],
 
     generate: {
