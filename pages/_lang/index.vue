@@ -31,7 +31,6 @@
         head() {
             return {
                 title: this.$t('seo.title'),
-                description: this.$t('seo.description'),
                 htmlAttrs: {
                     lang: this.$store.state.locale,
                 },
@@ -51,6 +50,7 @@
 
                     // SEO
                     { name: 'author', content: this.$t('seo.author') },
+                    { name: 'description', content: this.$t('seo.description') },
                 ],
             };
         },
