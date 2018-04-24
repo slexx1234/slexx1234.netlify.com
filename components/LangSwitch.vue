@@ -44,7 +44,7 @@
 
         methods: {
             onClick() {
-                if (this.$store.state.locale === 'en') this.$router.push('/ru');
+                if (this.$store.state.locale === 'en') this.$router.push('/ru/');
                 else this.$router.push('/');
             },
         },
