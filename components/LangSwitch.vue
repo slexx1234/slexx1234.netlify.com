@@ -1,8 +1,8 @@
 <template>
-    <div class="lang-switch" @click="onClick">
+    <a class="lang-switch" :href="url">
         <img :src="src" class="lang-switch__icon" :alt="name">
         <span class="lang-switch__name" v-text="name"></span>
-    </div>
+    </a>
 </template>
 
 <style lang="scss">
@@ -16,6 +16,12 @@
         background: #dfe6e9;
         color: #2d3436;
         font-weight: 800;
+
+        &:hover {
+            text-decoration: none;
+            color: #2d3436;
+        }
+
         &__icon {
             width: 75px;
             height: 50px;
@@ -40,12 +46,9 @@
                 if (this.$store.state.locale === 'en') return 'Русский';
                 return 'English';
             },
-        },
-
-        methods: {
-            onClick() {
-                if (this.$store.state.locale === 'en') this.$router.push('/ru/');
-                else this.$router.push('/');
+            url() {
+                if (this.$store.state.locale === 'en') return '/ru/';
+                else return '/';
             },
         },
     }
