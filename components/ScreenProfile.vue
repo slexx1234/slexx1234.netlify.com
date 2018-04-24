@@ -61,6 +61,10 @@
 </template>
 
 <style lang="scss">
+    .screen--profile {
+        padding: 2rem;
+    }
+
     .profile {
         background: #fff;
         max-width: 600px;

@@ -14,6 +14,11 @@
 </template>
 
 <style lang="scss">
+    .screen--skills {
+        padding: 2rem;
+        padding-top: 0;
+    }
+
     .skills {
         background: #fff;
         max-width: 600px;

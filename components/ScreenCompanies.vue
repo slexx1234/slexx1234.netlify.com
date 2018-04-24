@@ -13,6 +13,11 @@
 </template>
 
 <style lang="scss">
+    .screen--companies {
+        padding: 2rem;
+        padding-top: 0;
+    }
+
     .companies {
         background: #fff;
         max-width: 600px;
