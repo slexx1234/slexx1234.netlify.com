@@ -14,7 +14,7 @@
                         <tbody>
                             <tr>
                                 <th>{{ $t('profile.age') }}</th>
-                                <td>19</td>
+                                <td>20</td>
                             </tr>
                             <tr>
                                 <th>{{ $t('profile.sex') }}</th>
