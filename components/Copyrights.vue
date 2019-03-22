@@ -1,6 +1,6 @@
 <template>
     <div class="copyrights">
-        &copy; {{ $t('profile.name') }} 2018
+        &copy; {{ $t('profile.name') }} 2019
     </div>
 </template>
 
