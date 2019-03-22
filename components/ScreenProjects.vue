@@ -14,8 +14,21 @@
                      :description="$t('projects.grushik_ru')"
                      site="http://grushik.ru"></project>
 
+            <project title="tictactoee.netlify.com"
+                     :tags="['VueJS','Game','Tic Tac Toe','Pet project']"
+                     :images="[
+                        '/images/portfolio/tictactoee.netlify.com/1.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/tictactoee.netlify.com/2.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/tictactoee.netlify.com/3.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/tictactoee.netlify.com/4.' + ($webp ? 'webp' : 'png'),
+                     ]"
+                     date="28.04.2018"
+                     :description="$t('projects.tictactoee_netlify_com')"
+                     github="https://github.com/slexx1234/tic-tac-toe"
+                     site="http://tictactoee.netlify.com"></project>
+
             <project :title="$t('projects.this')"
-                     :tags="['HTML5','CSS3','JS','VueJS','Nuxt','PWA','SPA','SEO']"
+                     :tags="['HTML5','CSS3','JS','VueJS','Nuxt','PWA','SPA','SEO','Pet project']"
                      :images="[
                         '/images/portfolio/this/1.' + ($webp ? 'webp' : 'png'),
                         '/images/portfolio/this/2.' + ($webp ? 'webp' : 'png'),
