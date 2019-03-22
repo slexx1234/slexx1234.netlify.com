@@ -1,6 +1,19 @@
 <template>
     <screen class="screen--projects">
         <div class="projects">
+            <project title="grushik.ru"
+                     :tags="['VueJS','Nuxt','PWA','SPA','WordPress']"
+                     :images="[
+                        '/images/portfolio/grushik.ru/1.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/grushik.ru/2.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/grushik.ru/3.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/grushik.ru/4.' + ($webp ? 'webp' : 'png'),
+                        '/images/portfolio/grushik.ru/5.' + ($webp ? 'webp' : 'png'),
+                     ]"
+                     date="10.02.2019"
+                     :description="$t('projects.grushik_ru')"
+                     site="http://grushik.ru"></project>
+
             <project :title="$t('projects.this')"
                      :tags="['HTML5','CSS3','JS','VueJS','Nuxt','PWA','SPA','SEO']"
                      :images="[
