@@ -47,8 +47,8 @@
                 return 'English';
             },
             url() {
-                if (this.$store.state.locale === 'en') return '/ru/';
-                else return '/';
+                if (this.$store.state.locale === 'en') return '/';
+                else return '/en/';
             },
         },
     }
