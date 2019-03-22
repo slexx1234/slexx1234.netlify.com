@@ -37,6 +37,10 @@
                                 <td><a href="skype:+79510234561?chart">+7 951 023 45 61</a></td>
                             </tr>
                             <tr>
+                                <th>Telegram</th>
+                                <td><a href="https://t.me/slexx1234">@slexx1234</a></td>
+                            </tr>
+                            <tr>
                                 <th>{{ $t('profile.freelance') }}</th>
                                 <td>{{ $t('profile.available') }}</td>
                             </tr>
