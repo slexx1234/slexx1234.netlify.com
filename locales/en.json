@@ -35,20 +35,20 @@
   },
   "projects": {
     "this": "This web site",
-    "crm-besmarter": "CRM компании БиСмартер, автоматизирует бизнес процессы, ведёт статистику и учёт",
-    "author-besmarter": "Кабинет авторов БиСмартер, авторы получают заказы, договариваются о цене, сдают работу",
-    "icons-enricher": "Плагин WordPress добовляющий возможнось вставлять иконки в посты, меню, заголовки...",
-    "bid-manager": "Биддер ставок для Яндекс.Директ, работает автоматически, изменяет ставки каждую минуту, помогает держать нужную позицию",
-    "grushik_ru": "Сайт компании предоставляющей услуги траспортировки грузов."
+    "crm-besmarter": "CRM of the company BiSmarter, automates business processes, keeps statistics",
+    "author-besmarter": "Authors Cabinet BiSmarter, the authors receive orders, agree on a price, pass the work",
+    "icons-enricher": "WordPress plugin that adds the ability to insert icons into posts, menus, headers...",
+    "bid-manager": "Bidder rates for Yandex.Direct, changes rates every minute",
+    "grushik_ru": "The site of the company providing cargo transportation services."
   },
   "companies": {
     "header": "My career",
     "besmarter": {
-      "description": "Помощь студентам в написании курсовых, контрольных и других видов работ. Разрабатывал crm, попутно занимался ещё несколькими сайтами."
+      "description": "Developed crm, along with several other sites.."
     },
     "freelance": {
       "name": "Freelance",
-      "description": "Занимался самыми разнообразными задачами начиная от вёрстки заканчивая дизайном и программированием"
+      "description": "Engaged in a wide variety of tasks ranging from layout to design and programming."
     }
   },
   "social": {
