@@ -3,6 +3,8 @@
         <div class="companies">
             <h2 class="companies__header">{{ $t('companies.header') }}</h2>
 
+            <company :name="$t('companies.freelance.name')" dates="2019"/>
+
             <company :logo="$webp ? '/images/logos/besmarter.webp' : '/images/logos/besmarter.png'"
                      name="BeSmarter"
                      :description="$t('companies.besmarter.description')" dates="2017 - 2018"/>

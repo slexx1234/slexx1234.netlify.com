@@ -15,6 +15,12 @@
 
 <style lang="scss">
     .company {
+        &__info {
+            width: 100%;
+            > *:last-child {
+                margin-bottom: 0;
+            }
+        }
         &__inner {
             display: flex;
         }
