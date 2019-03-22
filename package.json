@@ -5,7 +5,7 @@
   "author": "slexx1234@gmail.com",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --port 3333",
     "start": "nuxt start",
     "build": "nuxt build",
     "generate": "nuxt generate && gulp all",

@@ -56,5 +56,10 @@
     "github": "GitHub",
     "site": "Сайт",
     "stackoverflow": "StackOverflow"
+  },
+  "screenshot": {
+    "one": "{count} скриншот",
+    "two": "{count} скриншота",
+    "five": "{count} скриншотов"
   }
 }

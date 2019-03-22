@@ -56,5 +56,10 @@
     "github": "GitHub",
     "site": "Site",
     "stackoverflow": "StackOverflow"
+  },
+  "screenshot": {
+    "one": "{count} screenshot",
+    "two": "{count} screenshots",
+    "five": "{count} screenshots"
   }
 }

@@ -11,6 +11,7 @@
                         '/images/portfolio/grushik.ru/5.' + ($webp ? 'webp' : 'png'),
                      ]"
                      date="10.02.2019"
+                     :screenshots="$t('screenshot.five', { count: 5 })"
                      :description="$t('projects.grushik_ru')"
                      site="http://grushik.ru"></project>
 
@@ -23,6 +24,7 @@
                         '/images/portfolio/tictactoee.netlify.com/4.' + ($webp ? 'webp' : 'png'),
                      ]"
                      date="28.04.2018"
+                     :screenshots="$t('screenshot.two', { count: 4 })"
                      :description="$t('projects.tictactoee_netlify_com')"
                      github="https://github.com/slexx1234/tic-tac-toe"
                      site="http://tictactoee.netlify.com"></project>
@@ -36,6 +38,7 @@
                         '/images/portfolio/this/4.' + ($webp ? 'webp' : 'png'),
                      ]"
                      date="06.04.2018"
+                     :screenshots="$t('screenshot.two', { count: 4 })"
                      site="https://slexx1234.netlify.com"
                      github="https://github.com/slexx1234/slexx1234.netlify.com"></project>
 
@@ -48,6 +51,7 @@
                         '/images/portfolio/icons-enricher/4.gif',
                      ]"
                      date="2017"
+                     :screenshots="$t('screenshot.two', { count: 4 })"
                      :description="$t('projects.icons-enricher')"
                      site="https://wordpress.org/plugins/icons-enricher/"></project>
 
@@ -59,6 +63,7 @@
                         '/images/portfolio/crm-besmarter/3.' + ($webp ? 'webp' : 'png'),
                         '/images/portfolio/crm-besmarter/4.' + ($webp ? 'webp' : 'png'),
                      ]"
+                     :screenshots="$t('screenshot.two', { count: 4 })"
                      :description="$t('projects.crm-besmarter')"
                      date="2017 - 2018"></project>
 
@@ -73,6 +78,7 @@
                         '/images/portfolio/author-besmarter/6.' + ($webp ? 'webp' : 'png'),
                         '/images/portfolio/author-besmarter/7.' + ($webp ? 'webp' : 'png'),
                      ]"
+                     :screenshots="$t('screenshot.five', { count: 7 })"
                      :description="$t('projects.author-besmarter')"
                      site="https://avtor.besmarter.ru"
                      date="2018"></project>
@@ -84,6 +90,7 @@
                         '/images/portfolio/bid-manager/2.' + ($webp ? 'webp' : 'png'),
                         '/images/portfolio/bid-manager/3.' + ($webp ? 'webp' : 'png'),
                      ]"
+                     :screenshots="$t('screenshot.two', { count: 3 })"
                      :description="$t('projects.bid-manager')"
                      date="2017"></project>
         </div>
