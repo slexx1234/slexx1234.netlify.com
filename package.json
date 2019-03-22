@@ -17,12 +17,12 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.0",
+    "lightgallery": "^1.6.12",
     "node-sass": "^4.8.3",
     "nuxt": "^1.0.0",
     "sass-loader": "^6.0.7",
     "v-webp": "^1.0.3",
-    "vue-i18n": "^7.6.0",
-    "vue-pure-lightbox": "^2.1.4"
+    "vue-i18n": "^7.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

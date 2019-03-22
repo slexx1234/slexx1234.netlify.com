@@ -1,10 +1,15 @@
 <template>
     <div class="project">
         <div class="project__inner">
-            <no-ssr>
-                <lightbox v-if="images && images.length" class="project__image" :thumbnail="images[0]" :images="images" :alternate-text="title"/>
-                <img class="project__image" :src="image" :alt="title" v-else>
-            </no-ssr>
+            <template v-if="images && images.length">
+                <img @click="openGallery" class="project__image" :src="images[0]" :alt="title">
+                <div ref="gallery" class="project__gallery">
+                    <div class="item" v-for="(image, i) in images" :key="i" :data-src="image">
+                        <img :src="image" :alt="title">
+                    </div>
+                </div>
+            </template>
+            <img class="project__image" :src="image" :alt="title" v-else>
             <h3 class="project__title">
                 {{ title }}
                 <span v-if="date" class="project__date" v-text="date"></span>
@@ -26,12 +31,17 @@
 </template>
 
 <style lang="scss">
+    $lg-path-fonts: '../node_modules/lightgallery/src/fonts';
+    $lg-path-images: '../node_modules/lightgallery/src/img';
+    @import "../node_modules/lightgallery/src/sass/lightgallery";
+
     .project {
         background: #fff;
         margin-bottom: 2rem;
         &__image {
             max-width: 100%;
             height: auto;
+            cursor: pointer;
         }
         &__inner {
             padding: 1rem;
@@ -61,6 +71,9 @@
                 color: #096ec5;
             }
         }
+        &__gallery {
+            display: none;
+        }
         &__links {
             background: #096ec5;
             padding: 1rem;
@@ -80,12 +93,16 @@
             }
         }
     }
-    .lightbox {
-        z-index: 100000 !important;
-    }
 </style>
 
 <script>
+    if (process.browser) {
+        window.$ = window.jQuery = require('jquery');
+        require('lightgallery');
+        require('lightgallery/modules/lg-zoom');
+        require('lightgallery/modules/lg-share');
+    }
+
     export default {
         props: {
             title: String,
@@ -97,5 +114,17 @@
             site: String,
             images: Array,
         },
+        mounted() {
+            if (process.browser && this.$refs.gallery) {
+                $(this.$refs.gallery).lightGallery();
+            }
+        },
+        methods: {
+            openGallery() {
+                if (process.browser && this.$refs.gallery) {
+                    $(this.$refs.gallery).find('img').click();
+                }
+            },
+        }
     }
 </script>
