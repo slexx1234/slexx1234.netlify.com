@@ -20,10 +20,10 @@
             </div>
         </div>
         <div class="project__links" v-if="github || site">
-            <a v-if="github" :href="github">
+            <a v-if="github" target="_blank" :href="github">
                 <img src="/images/github.svg" :alt="$t('social.github')">
             </a>
-            <a v-if="site" :href="site">
+            <a v-if="site" target="_blank" :href="site">
                 <img src="/images/site.svg" :alt="$t('social.site')">
             </a>
         </div>

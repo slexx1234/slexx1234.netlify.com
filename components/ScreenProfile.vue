@@ -38,7 +38,7 @@
                             </tr>
                             <tr>
                                 <th>Telegram</th>
-                                <td><a href="https://t.me/slexx1234">@slexx1234</a></td>
+                                <td><a target="_blank" href="https://t.me/slexx1234">@slexx1234</a></td>
                             </tr>
                             <tr>
                                 <th>{{ $t('profile.freelance') }}</th>
@@ -53,10 +53,10 @@
                 <a href="https://slexx1234.netlify.com/" itemprop="url">
                     <img src="/images/site.svg" :alt="$t('social.site')">
                 </a>
-                <a href="https://github.com/slexx1234">
+                <a target="_blank" href="https://github.com/slexx1234">
                     <img src="/images/github.svg" :alt="$t('social.github')">
                 </a>
-                <a href="https://ru.stackoverflow.com/users/293390/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%A9%D0%B5%D0%BF%D0%BA%D0%B8%D0%BD?tab=profile">
+                <a target="_blank" href="https://ru.stackoverflow.com/users/293390/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%A9%D0%B5%D0%BF%D0%BA%D0%B8%D0%BD?tab=profile">
                     <img src="/images/stackoverflow.svg" :alt="$t('social.stackoverflow')">
                 </a>
             </nav>
