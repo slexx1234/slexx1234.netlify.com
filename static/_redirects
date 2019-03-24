@@ -1,3 +1,4 @@
 http://slexx1234.netlify.com/* https://slexx1234.netlify.com/:splat 301!
 /en                            /en/index.html                       200
+/ru                            /index.html                          200
 /                              /index.html                          200
