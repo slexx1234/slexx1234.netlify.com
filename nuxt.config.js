@@ -70,7 +70,7 @@ module.exports = {
     ],
 
     generate: {
-        routes: ['/', '/ru'],
+        routes: ['/', '/en'],
         minify: {
             collapseBooleanAttributes: true,
             collapseWhitespace: true,
