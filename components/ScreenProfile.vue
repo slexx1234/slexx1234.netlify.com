@@ -30,7 +30,7 @@
                             </tr>
                             <tr>
                                 <th>{{ $t('profile.phone') }}</th>
-                                <td><a href="tel:+79771552909" itemprop="telephone">+7 977 155 29 09</a></td>
+                                <td><a href="tel:+79777724219" itemprop="telephone">+7 977 772 42 19</a></td>
                             </tr>
                             <tr>
                                 <th>Skype</th>
