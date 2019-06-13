@@ -19,6 +19,7 @@
     "bootstrap": "^4.1.0",
     "lightgallery": "^1.6.12",
     "nuxt": "^1.0.0",
+    "particles.js": "^2.0.0",
     "sass-loader": "^6.0.7",
     "v-webp": "^1.0.3",
     "vue-i18n": "^7.6.0"

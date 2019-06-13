@@ -1,6 +1,6 @@
 <template>
     <main class="page">
-        <rain/>
+        <particles/>
         <slot/>
     </main>
 </template>
@@ -19,11 +19,11 @@
 </style>
 
 <script>
-    import Rain from './Rain';
+    import Particles from './Particles';
 
     export default {
         components: {
-            Rain,
+            Particles,
         },
     }
 </script>
