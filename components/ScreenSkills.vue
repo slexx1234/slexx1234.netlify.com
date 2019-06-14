@@ -47,7 +47,7 @@
         &__header {
             font-size: 2rem;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 700;
             margin: 0;
             margin-bottom: 2rem;
         }
@@ -71,7 +71,7 @@
         &__header {
             font-size: 2rem;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 700;
             margin: 0;
             margin-bottom: 2rem;
         }

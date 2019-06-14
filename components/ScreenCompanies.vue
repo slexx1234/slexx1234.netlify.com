@@ -23,7 +23,7 @@
         &__header {
             font-size: 2rem;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 700;
             text-align: center;
             margin: 0;
             margin-bottom: 2rem;

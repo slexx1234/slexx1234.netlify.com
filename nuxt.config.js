@@ -50,6 +50,7 @@ module.exports = {
             { rel: 'icon', type: 'image/png', href: '/images/favicons/favicon.png' },
             { rel: 'mask-icon', href: '/images/favicons/favicon-black.svg', color: '#0097e6' },
             { rel: 'icon', type: 'image/svg+xml', href: '/images/favicons/favicon.svg' },
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap&subset=cyrillic' },
         ],
         script: [
             { charset: 'UTF-8', src: 'https://mc.yandex.ru/metrika/watch.js', async: true },

@@ -71,7 +71,7 @@
         &__title {
             margin: 0;
             color: #333;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1rem;
             line-height: 1.5;
             margin-bottom: 1rem;

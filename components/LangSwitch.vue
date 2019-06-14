@@ -15,7 +15,7 @@
         z-index: 1000;
         background: #f5f6fa;
         color: #2f3640;
-        font-weight: 800;
+        font-weight: 400;
         box-shadow: 0 20px 30px 0 rgba(50, 50, 50, .25);
         border-radius: 5px;
         overflow: hidden;

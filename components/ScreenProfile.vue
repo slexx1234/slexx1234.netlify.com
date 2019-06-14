@@ -77,7 +77,7 @@
         &__hello {
             line-height: 1;
             font-size: 1rem;
-            font-weight: 200;
+            font-weight: 400;
             margin: 0;
             position: relative;
         }
@@ -105,21 +105,21 @@
             }
         }
         &__header {
-            font-weight: 200;
+            font-weight: 400;
             font-size: 2rem;
             color: #333;
             line-height: 1;
             text-transform: uppercase;
             margin: 0.5rem 0 0.3rem;
             span {
-                font-weight: 600;
+                font-weight: 700;
             }
         }
         &__job {
             color: #333;
             font-size: 1.3rem;
             margin: 0;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 2rem;
         }
         &__info {
