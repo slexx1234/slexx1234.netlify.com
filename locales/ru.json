@@ -64,9 +64,5 @@
     "site": "Сайт",
     "stackoverflow": "StackOverflow"
   },
-  "screenshot": {
-    "one": "{count} скриншот",
-    "two": "{count} скриншота",
-    "five": "{count} скриншотов"
-  }
+  "screenshots": "нет скриншотов | {count} скриншот | {count} скриншота | {count} скриншотов"
 }

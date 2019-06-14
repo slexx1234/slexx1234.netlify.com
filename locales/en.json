@@ -64,9 +64,5 @@
     "site": "Site",
     "stackoverflow": "StackOverflow"
   },
-  "screenshot": {
-    "one": "{count} screenshot",
-    "two": "{count} screenshots",
-    "five": "{count} screenshots"
-  }
+  "screenshots": "no screenshots | {count} screenshot | {count} screenshots"
 }

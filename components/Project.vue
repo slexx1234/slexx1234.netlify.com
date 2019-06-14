@@ -3,8 +3,8 @@
         <div class="project__inner">
             <template v-if="images && images.length">
                 <div class="project__image" @click="openGallery">
-                    <img :src="images[0]" :alt="title">
-                    <span class="project__screenshots" v-if="screenshots" v-text="screenshots"></span>
+                    <img :src="preview" :alt="title">
+                    <span class="project__screenshots" v-text="$tc('screenshots', images.length, { count: images.length })"></span>
                 </div>
                 <div ref="gallery" class="project__gallery">
                     <div class="item" v-for="(image, i) in images" :key="i" :data-src="image">
@@ -74,6 +74,7 @@
             font-weight: 600;
             font-size: 1rem;
             line-height: 1.5;
+            margin-bottom: 1rem;
         }
         &__date {
             float: right;
@@ -107,10 +108,14 @@
             list-style: none;
             padding: 0;
             color: #333;
+            display: flex;
             li {
                 margin-bottom: 1rem;
                 &:last-child {
                     margin-bottom: 0;
+                }
+                + li {
+                    margin-left: 1rem;
                 }
             }
             .fa {
@@ -147,6 +152,7 @@
             site: String,
             images: Array,
             screenshots: String,
+            preview: String,
         },
         mounted() {
             if (process.browser && this.$refs.gallery) {
