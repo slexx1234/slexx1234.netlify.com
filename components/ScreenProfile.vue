@@ -4,62 +4,48 @@
             <div class="profile__inner">
                 <img class="profile__avatar" itemprop="image" :src="'/images/avatar.' + ($webp ? 'webp' : 'png')" :alt="$t('profile.avatar')">
                 <div class="profile__info">
-                    <span class="profile__hello">{{ $t('profile.hello')}}</span>
+                    <h6 class="profile__hello">{{ $t('profile.hello')}}</h6>
                     <h1 class="profile__header">{{ $t('profile.name_prefix')}} <span itemprop="name">{{ $t('profile.name') }}</span></h1>
                     <p class="profile__job" itemprop="jobTitle">{{ $t('profile.job') }}</p>
 
-                    <div class="profile__divider"></div>
-
-                    <table class="profile__info">
-                        <tbody>
-                            <tr>
-                                <th>{{ $t('profile.age') }}</th>
-                                <td>20</td>
-                            </tr>
-                            <tr>
-                                <th>{{ $t('profile.sex') }}</th>
-                                <td itemprop="gender">{{ $t('profile.male') }}</td>
-                            </tr>
-                            <tr>
-                                <th>{{ $t('profile.city') }}</th>
-                                <td itemprop="address">{{ $t('profile.moscow') }}</td>
-                            </tr>
-                            <tr>
-                                <th>E-Mail</th>
-                                <td><a href="mailto:slexx1234@gmail.com" itemprop="email">slexx1234@gmail.com</a></td>
-                            </tr>
-                            <tr>
-                                <th>{{ $t('profile.phone') }}</th>
-                                <td><a href="tel:+79777724219" itemprop="telephone">+7 977 772 42 19</a></td>
-                            </tr>
-                            <tr>
-                                <th>Skype</th>
-                                <td><a href="skype:+79510234561?chart">+7 951 023 45 61</a></td>
-                            </tr>
-                            <tr>
-                                <th>Telegram</th>
-                                <td><a target="_blank" href="https://t.me/slexx1234">@slexx1234</a></td>
-                            </tr>
-                            <tr>
-                                <th>{{ $t('profile.freelance') }}</th>
-                                <td>{{ $t('profile.available') }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <ul class="profile__contacts">
+                        <li>
+                            <icon>home</icon>
+                            {{ $t('profile.moscow') }}
+                        </li>
+                        <li>
+                            <a href="mailto:slexx1234@gmail.com" itemprop="email">
+                                <icon>envelope</icon>
+                                slexx1234@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+79777724219" itemprop="telephone">
+                                <icon>phone</icon>
+                                +7 977 772 42 19
+                            </a>
+                        </li>
+                        <li>
+                            <a href="skype:+79510234561?chart">
+                                <icon>skype</icon>
+                                +7 951 023 45 61
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://t.me/slexx1234">
+                                <icon>telegram</icon>
+                                @slexx1234
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/slexx1234">
+                                <icon>github</icon>
+                                {{ $t('social.github') }}
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="profile__description" itemprop="disambiguatingDescription">{{ $t('profile.description') }}</div>
-            <nav class="profile__links">
-                <a href="https://slexx1234.netlify.com/" itemprop="url">
-                    <img src="/images/site.svg" :alt="$t('social.site')">
-                </a>
-                <a target="_blank" href="https://github.com/slexx1234">
-                    <img src="/images/github.svg" :alt="$t('social.github')">
-                </a>
-                <a target="_blank" href="https://ru.stackoverflow.com/users/293390/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%A9%D0%B5%D0%BF%D0%BA%D0%B8%D0%BD?tab=profile">
-                    <img src="/images/stackoverflow.svg" :alt="$t('social.stackoverflow')">
-                </a>
-            </nav>
         </div>
     </screen>
 </template>
@@ -67,37 +53,33 @@
 <style lang="scss">
     .screen--profile {
         padding: 2rem;
+        min-height: 100vh;
+        @media (max-width: 600px) {
+            min-height: auto;
+            padding: 0;
+        }
     }
 
     .profile {
         background: #fff;
-        max-width: 600px;
+        max-width: 800px;
+        box-shadow: 0 20px 30px 0 rgba(50, 50, 50, .25);
+        border-radius: 15px;
+        overflow: hidden;
         @media (max-width: 600px) {
-            max-width: 400px;
+            border-radius: 0;
+            box-shadow: none;
+            margin: 0;
         }
         margin: auto;
         width: 100%;
 
         &__hello {
-            display: inline-block;
-            background: #096ec5;
-            color: #fff;
-            font-weight: bold;
             line-height: 1;
-            padding: 0.5rem 1rem;
-            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 200;
+            margin: 0;
             position: relative;
-            &:after {
-                content: '';
-                width: 0;
-                height: 0;
-                display: block;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                border: 0.5rem solid transparent;
-                border-top-color: #096ec5;
-            }
         }
         &__inner {
             display: flex;
@@ -119,25 +101,26 @@
             padding-left: 0;
             @media (max-width: 600px) {
                 padding-left: 2rem;
+                padding-bottom: 0;
             }
         }
         &__header {
             font-weight: 200;
-            margin: 0;
+            font-size: 2rem;
+            color: #333;
+            line-height: 1;
+            text-transform: uppercase;
+            margin: 0.5rem 0 0.3rem;
             span {
                 font-weight: 600;
             }
         }
         &__job {
-            color: #636e72;
+            color: #333;
+            font-size: 1.3rem;
             margin: 0;
-        }
-        &__divider {
-            display: block;
-            margin: 1rem 0;
-            width: 100%;
-            height: 1px;
-            background: #b2bec3;
+            font-weight: 600;
+            margin-bottom: 2rem;
         }
         &__info {
             margin: 0;
@@ -154,28 +137,26 @@
             }
         }
         &__description {
-            text-align: center;
-            padding: 2rem;
-            padding-top: 0;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 2rem;
         }
-        &__links {
-            background: #096ec5;
-            padding: 1rem;
-            text-align: center;
-            color: #fff;
-            img {
-                width: 2rem;
-                height: 2rem;
+        &__contacts {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            color: #333;
+            li {
+                margin-bottom: 1rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
-            a + a {
-                margin-left: 2rem;
+            .fa {
+                margin-right: 0.5rem;
             }
             a {
-                opacity: 0.5;
-                transition: 0.3s linear opacity;
-                &:hover {
-                    opacity: 1;
-                }
+                color: #0097e6;
             }
         }
     }
@@ -183,9 +164,11 @@
 
 <script>
     import Screen from './Screen';
+    import Icon from "./Icon";
 
     export default {
         components: {
+            Icon,
             Screen,
         },
     }

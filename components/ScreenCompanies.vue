@@ -3,13 +3,11 @@
         <div class="companies">
             <h2 class="companies__header">{{ $t('companies.header') }}</h2>
 
-            <company :name="$t('companies.freelance.name')" dates="2019"/>
-
-            <company :logo="$webp ? '/images/logos/besmarter.webp' : '/images/logos/besmarter.png'"
-                     name="BeSmarter"
-                     :description="$t('companies.besmarter.description')" dates="2017 - 2018"/>
-
-            <company :name="$t('companies.freelance.name')" :description="$t('companies.freelance.description')" dates="2016 - 2017"/>
+            <timeline class="companies__timeline">
+                <timeline-item :header="$t('companies.freelance.name')" dates="2019"/>
+                <timeline-item header="BeSmarter" :description="$t('companies.besmarter.description')" dates="2017 - 2018"/>
+                <timeline-item :header="$t('companies.freelance.name')" :description="$t('companies.freelance.description')" dates="2016 - 2017"/>
+            </timeline>
         </div>
     </screen>
 </template>
@@ -19,31 +17,41 @@
         padding: 2rem;
         padding-top: 0;
     }
-
     .companies {
-        background: #fff;
-        max-width: 600px;
-        min-width: 300px;
-        @media (max-width: 600px) {
-            max-width: 400px;
-        }
-        width: 100%;
+        max-width: 800px;
         margin: auto;
-        padding: 2rem;
         &__header {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
             margin-bottom: 2rem;
+            @media (max-width: 600px) {
+                text-align: left;
+            }
+        }
+        &__timeline {
+            @media (max-width: 800px) {
+                margin-left: -40%;
+            }
+            @media (max-width: 600px) {
+                margin: 0;
+            }
         }
     }
 </style>
 
 <script>
     import Screen from './Screen';
-    import Company from './Company';
+    import Timeline from './Timeline';
+    import TimelineItem from './TimelineItem';
 
     export default {
         components: {
             Screen,
-            Company,
+            TimelineItem,
+            Timeline,
         },
     }
 </script>

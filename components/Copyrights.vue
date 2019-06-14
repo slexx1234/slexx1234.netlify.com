@@ -6,9 +6,12 @@
 
 <style lang="scss">
     .copyrights {
-        padding: 1rem;
-        background: #fff;
+        padding: 2rem;
+        background: linear-gradient(0.25turn, #487eb0, #273c75);
         text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
     }
 </style>
 

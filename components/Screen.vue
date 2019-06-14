@@ -7,7 +7,6 @@
 <style lang="scss">
     .screen {
         position: relative;
-        min-height: 100vh;
         width: 100%;
         display: flex;
     }

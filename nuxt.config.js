@@ -8,7 +8,7 @@ module.exports = {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-            { name: 'theme-color', content: '#096ec5' },
+            { name: 'theme-color', content: '#0097e6' },
             { name: 'HandheldFriendly', content: true },
             { name: 'MobileOptimized', content: 320 },
             { name: 'mobile-web-app-capable', content: 'yes' },
@@ -48,7 +48,7 @@ module.exports = {
             { rel: 'apple-touch-icon', sizes: '152x152', href: '/images/favicons/ios-152.png' },
             { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/favicons/ios-180.png' },
             { rel: 'icon', type: 'image/png', href: '/images/favicons/favicon.png' },
-            { rel: 'mask-icon', href: '/images/favicons/favicon-black.svg', color: '#096ec5' },
+            { rel: 'mask-icon', href: '/images/favicons/favicon-black.svg', color: '#0097e6' },
             { rel: 'icon', type: 'image/svg+xml', href: '/images/favicons/favicon.svg' },
         ],
         script: [

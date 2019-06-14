@@ -19,18 +19,25 @@
                 {{ title }}
                 <span v-if="date" class="project__date" v-text="date"></span>
             </h3>
-            <p class="project__description" v-if="description" v-text="description"></p>
             <div class="project__tags">
                 <span class="project__tag" v-for="tag in tags" v-text="tag" :key="tag"></span>
             </div>
-        </div>
-        <div class="project__links" v-if="github || site">
-            <a v-if="github" target="_blank" :href="github">
-                <img src="/images/github.svg" :alt="$t('social.github')">
-            </a>
-            <a v-if="site" target="_blank" :href="site">
-                <img src="/images/site.svg" :alt="$t('social.site')">
-            </a>
+            <p class="project__description" v-if="description" v-text="description"></p>
+
+            <ul class="project__links">
+                <li v-if="github">
+                    <a  target="_blank" :href="github">
+                        <icon>github</icon>
+                        {{ $t('social.github') }}
+                    </a>
+                </li>
+                <li v-if="site">
+                    <a target="_blank" :href="site">
+                        <icon>globe</icon>
+                        {{ $t('social.site') }}
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -41,11 +48,13 @@
     @import "../node_modules/lightgallery/src/sass/lightgallery";
 
     .project {
-        background: #fff;
         margin-bottom: 2rem;
         &__image {
             cursor: pointer;
             position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
             > img {
                 max-width: 100%;
                 height: auto;
@@ -54,17 +63,17 @@
         &__screenshots {
             position: absolute;
             right: 0;
-            font-weight: bold;
             top: 0;
             background: #fff;
             padding: 0.5rem 1rem;
-        }
-        &__inner {
-            padding: 1rem;
-            padding-bottom: 0;
+            border-bottom-left-radius: 10px;
         }
         &__title {
-            margin: 1rem 0;
+            margin: 0;
+            color: #333;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.5;
         }
         &__date {
             float: right;
@@ -74,38 +83,41 @@
         &__tags {
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 1rem;
         }
         &__tag {
-            background: #096ec5;
-            padding: 0.5rem 1rem;
-            color: #fff;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            margin-right: 1rem;
-            &::selection {
-                background: #fff;
-                color: #096ec5;
-            }
+            background: #f5f6fa;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.3rem;
+            margin-right: 0.5rem;
+            display: inline-block;
         }
         &__gallery {
             display: none;
         }
+        &__description {
+            color: #333;
+            line-height: 1.5;
+            margin: 0;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
         &__links {
-            background: #096ec5;
-            padding: 1rem;
-            img {
-                width: 2rem;
-                height: 2rem;
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            color: #333;
+            li {
+                margin-bottom: 1rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
-            a + a {
-                margin-left: 2rem;
+            .fa {
+                margin-right: 0.5rem;
             }
             a {
-                opacity: 0.5;
-                transition: 0.3s linear opacity;
-                &:hover {
-                    opacity: 1;
-                }
+                color: #0097e6;
             }
         }
     }
@@ -119,7 +131,12 @@
         require('lightgallery/modules/lg-share');
     }
 
+    import Icon from './Icon'
+
     export default {
+        components: {
+            Icon,
+        },
         props: {
             title: String,
             tags: Array,

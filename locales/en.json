@@ -27,13 +27,19 @@
     "moscow": "Moscow",
     "phone": "Phone",
     "freelance": "Freelance",
-    "available": "Available",
-    "description": "I am a full stack developer, and this saves you from having to hire two different people. I work directly (without middlemen). I work more than 5 years in the field of web development."
+    "available": "Available"
+  },
+  "about": {
+    "header": "About me",
+    "description_1": "Программист-профессионал с большим практическим опытом проектирования, разработки и поддержки сайтов, порталов, сложных проектров.",
+    "description_2": "Интересны объемные/долгосрочные и перспективные веб-проекты, идеальный вариант – с еженедельной оплатой на длительной основе.",
+    "description_3": "В приоритете индивидуальная заказная разработка, объемные, нетиповые, длительные проекты с поддержкой: оригинальные корпоративные сайты, интернет-магазины, CRM, порталы, стартапы, интеграции, базы данных, личные кабинеты."
   },
   "skills": {
     "header": "My skills"
   },
   "projects": {
+    "header": "My projects",
     "this": "This web site",
     "crm-besmarter": "CRM of the company BiSmarter, automates business processes, keeps statistics",
     "author-besmarter": "Authors Cabinet BiSmarter, the authors receive orders, agree on a price, pass the work",

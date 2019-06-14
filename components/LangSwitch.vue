@@ -13,9 +13,12 @@
         height: 50px;
         right: 20px;
         z-index: 1000;
-        background: #dfe6e9;
-        color: #2d3436;
+        background: #f5f6fa;
+        color: #2f3640;
         font-weight: 800;
+        box-shadow: 0 20px 30px 0 rgba(50, 50, 50, .25);
+        border-radius: 5px;
+        overflow: hidden;
 
         &:hover {
             text-decoration: none;

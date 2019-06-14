@@ -5,7 +5,7 @@
 <style>
     .particles {
         background: linear-gradient(0.25turn, #487eb0, #273c75);
-        position: fixed;
+        position: absolute;
         top: 0;
         bottom: 0;
         left: 0;

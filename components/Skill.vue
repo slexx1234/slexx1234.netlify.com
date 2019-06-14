@@ -2,7 +2,7 @@
     <div class="skill">
         <div class="skill__label" v-text="label"></div>
         <div class="skill__wrap">
-            <div class="skill__indicator" :style="{ width: value + '%', background: color }"></div>
+            <div class="skill__indicator" :style="{ width: value + '%' }"></div>
         </div>
     </div>
 </template>
@@ -11,12 +11,20 @@
     .skill {
         &__indicator {
             display: block;
-            height: 100%;
+            background: linear-gradient(0.25turn, #8c7ae6, #00a8ff);
+            border-radius: 0.5rem;
+            height: 1rem;
+        }
+        &__label {
+            margin-bottom: 0.5rem;
+            color: #333;
         }
         &__wrap {
-            background: #dfe6e9;
+            background: #f5f6fa;
             display: block;
-            height: 1rem;
+            height: 2rem;
+            padding: 0.5rem;
+            border-radius: 1rem;
         }
         + .skill {
             margin-top: 1rem;
@@ -29,10 +37,6 @@
         props: {
             value: Number,
             label: String,
-            color: {
-                type: String,
-                default: '#096ec5',
-            },
         }
     }
 </script>
