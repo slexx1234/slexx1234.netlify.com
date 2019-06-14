@@ -66,6 +66,7 @@ module.exports = {
         { src: '~plugins/i18n.js', ssr: true },
         { src: '~plugins/sw.js', ssr: false },
         { src: '~plugins/metrika.js', ssr: false },
+        { src: '~plugins/replain.js', ssr: false },
         { src: '~plugins/webp.js' },
     ],
 

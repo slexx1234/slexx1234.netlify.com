@@ -57,3 +57,9 @@
         },
     }
 </script>
+
+<style>
+    .ctc__show {
+        box-shadow: 0 20px 30px 0 rgba(50, 50, 50, .25);
+    }
+</style>
