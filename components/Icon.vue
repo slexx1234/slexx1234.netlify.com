@@ -2,6 +2,12 @@
     <font-awesome-icon :icon="icon" class="fa-fw fa"/>
 </template>
 
+<style>
+    .fa {
+        height: 1rem;
+    }
+</style>
+
 <script>
     import { library } from '@fortawesome/fontawesome-svg-core'
     import { faHome, faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons'
