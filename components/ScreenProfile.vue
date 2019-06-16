@@ -2,7 +2,7 @@
     <screen class="screen--profile">
         <div class="profile" itemscope itemtype="http://schema.org/Person">
             <div class="profile__inner">
-                <img class="profile__avatar" itemprop="image" :src="'/images/avatar.' + ($webp ? 'webp' : 'png')" :alt="$t('profile.avatar')">
+                <img class="profile__avatar" itemprop="image" src="/images/rick.svg" :alt="$t('profile.avatar')">
                 <div class="profile__info">
                     <h6 class="profile__hello">{{ $t('profile.hello')}}</h6>
                     <h1 class="profile__header">{{ $t('profile.name_prefix')}} <span itemprop="name">{{ $t('profile.name') }}</span></h1>
@@ -89,7 +89,7 @@
         }
         &__avatar {
             width: 200px;
-            height: 200px;
+            height: auto;
             margin: 2rem;
             @media (max-width: 600px) {
                 margin-left: auto;
