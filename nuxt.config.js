@@ -22,7 +22,7 @@ module.exports = {
             { name: 'twitter:creator', content: '@slexx1234' },
 
             // Open Graph
-            { property: 'og:image', content: '/images/avatar.png' },
+            { property: 'og:image', content: '/images/rick.svg' },
             { property: 'og:image:type', content: 'image/png' },
             { property: 'og:image:width', content: '200' },
             { property: 'og:image:height', content: '200' },
