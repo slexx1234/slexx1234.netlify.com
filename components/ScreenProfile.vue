@@ -1,5 +1,6 @@
 <template>
     <screen class="screen--profile">
+        <particles/>
         <div class="profile" itemscope itemtype="http://schema.org/Person">
             <div class="profile__inner">
                 <img class="profile__avatar" itemprop="image" src="/images/rick.svg" :alt="$t('profile.avatar')">
@@ -165,9 +166,11 @@
 <script>
     import Screen from './Screen';
     import Icon from "./Icon";
+    import Particles from "./Particles";
 
     export default {
         components: {
+            Particles,
             Icon,
             Screen,
         },

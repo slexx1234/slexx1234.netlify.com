@@ -16,6 +16,8 @@
 
 <script>
     export default {
+        name: 'Particles',
+
         data() {
             return {}
         },
