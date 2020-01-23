@@ -23,7 +23,7 @@
                         <li>
                             <a href="tel:+79777724219" itemprop="telephone">
                                 <icon>phone</icon>
-                                +7 977 772 42 19
+                                +7 977 709 26 71
                             </a>
                         </li>
                         <li>
@@ -33,9 +33,9 @@
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://t.me/slexx1234">
+                            <a target="_blank" href="https://t.me/slexx12342">
                                 <icon>telegram</icon>
-                                @slexx1234
+                                @slexx12342
                             </a>
                         </li>
                         <li>
