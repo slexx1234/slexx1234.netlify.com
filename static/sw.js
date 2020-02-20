@@ -3,7 +3,7 @@
 // Caching all files
 importScripts('sw-toolbox.js');
 
-toolbox.precache(['/', '/ru']);
+toolbox.precache(['/', '/en']);
 toolbox.router.get('/*', toolbox.cacheFirst);
 
 self.addEventListener('install', function(event) {

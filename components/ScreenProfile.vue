@@ -20,12 +20,14 @@
                                 slexx1234@gmail.com
                             </a>
                         </li>
+                        <!--
                         <li>
                             <a href="tel:+79777724219" itemprop="telephone">
                                 <icon>phone</icon>
                                 +7 977 709 26 71
                             </a>
                         </li>
+                        -->
                         <li>
                             <a href="skype:+79510234561?chart">
                                 <icon>skype</icon>

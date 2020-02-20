@@ -4,7 +4,7 @@
             <h2 class="companies__header">{{ $t('companies.header') }}</h2>
 
             <timeline class="companies__timeline">
-                <timeline-item :header="$t('companies.freelance.name')" dates="2019"/>
+                <timeline-item :header="$t('companies.freelance.name')" dates="2019 - 2020"/>
                 <timeline-item header="BeSmarter" :description="$t('companies.besmarter.description')" dates="2017 - 2018"/>
                 <timeline-item :header="$t('companies.freelance.name')" :description="$t('companies.freelance.description')" dates="2016 - 2017"/>
             </timeline>

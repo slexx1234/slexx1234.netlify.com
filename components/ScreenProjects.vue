@@ -3,6 +3,31 @@
         <div class="projects">
             <h2 class="projects__header">{{ $t('projects.header') }}</h2>
             <div class="projects__list">
+                <project title="vpnbeaver.com"
+                         :tags="['PHP', 'Laravel', 'SPA', 'VueJS', 'Bootstrap']"
+                         :preview="'/images/portfolio/vpnbeaver.com/preview.' + ($webp ? 'webp' : 'png')"
+                         :images="[
+                            '/images/portfolio/vpnbeaver.com/1.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/2.' + ($webp ? 'webp' : 'jpg'),
+                            '/images/portfolio/vpnbeaver.com/3.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/4.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/5.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/6.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/7.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/8.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/9.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/10.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/11.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/12.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/13.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/14.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/15.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/16.' + ($webp ? 'webp' : 'png'),
+                            '/images/portfolio/vpnbeaver.com/17.' + ($webp ? 'webp' : 'png'),
+                        ]"
+                         date="17.02.2020"
+                         :description="$t('projects.vpnbeaver_com')"
+                         site="https://vpnbeaver.com"></project>
                 <project title="adbobr.com"
                          :tags="['PHP', 'Laravel', 'MySQL']"
                          :preview="'/images/portfolio/adbobr.com/preview.' + ($webp ? 'webp' : 'png')"

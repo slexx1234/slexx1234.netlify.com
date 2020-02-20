@@ -4,9 +4,9 @@
   "background_color": "#000",
   "theme_color": "#0984e3",
   "display": "fullscreen",
-  "orientation": "landscape",
+  "orientation": "portrait",
   "lang": "ru",
-  "start_url": "/ru/",
+  "start_url": "/",
   "icons": [
     {
       "src": "/images/favicons/android-36.png",

@@ -2,7 +2,7 @@
   "seo": {
     "title": "PHP Developer Shchepkin Aleksey",
     "author": "Shchepkin Aleksey",
-    "description": "Программист-профессионал с большим практическим опытом проектирования, разработки и поддержки сайтов, порталов, сложных проектров."
+    "description": "Professional programmer with extensive practical experience in the design, development and support of sites, portals, complex projects."
   },
   "open_graph": {
     "first_name": "Aleksey",
@@ -10,7 +10,7 @@
     "username": "slexx1234",
     "gender": "Male",
     "title": "PHP Developer Shchepkin Aleksey",
-    "description": "Программист-профессионал с большим практическим опытом проектирования, разработки и поддержки сайтов, порталов, сложных проектров.",
+    "description": "Professional programmer with extensive practical experience in the design, development and support of sites, portals, complex projects.",
     "locale": "en_EN",
     "locale_alternate": "ru_RU"
   },
@@ -31,9 +31,9 @@
   },
   "about": {
     "header": "About me",
-    "description_1": "Программист-профессионал с большим практическим опытом проектирования, разработки и поддержки сайтов, порталов, сложных проектров.",
-    "description_2": "Интересны объемные/долгосрочные и перспективные веб-проекты, идеальный вариант – с еженедельной оплатой на длительной основе.",
-    "description_3": "В приоритете индивидуальная заказная разработка, объемные, нетиповые, длительные проекты с поддержкой: оригинальные корпоративные сайты, интернет-магазины, CRM, порталы, стартапы, интеграции, базы данных, личные кабинеты."
+    "description_1": "Professional programmer with extensive practical experience in the design, development and support of sites, portals, complex projects.",
+    "description_2": "Voluminous / long-term and promising web projects are interesting, the ideal option is with weekly payment on a long-term basis.",
+    "description_3": "The priority is individual custom development, voluminous, atypical, lengthy projects with support: original corporate sites, online stores, CRM, portals, startups, integrations, databases."
   },
   "skills": {
     "header": "My skills"
@@ -47,7 +47,8 @@
     "bid-manager": "Bidder rates for Yandex.Direct, changes rates every minute",
     "grushik_ru": "The site of the company providing cargo transportation services.",
     "tictactoee_netlify_com": "Play the classic Tic-Tac-Toe game (also called Noughts and Crosses) for free.",
-    "adbobr_com": "Affiliate programs aggregator."
+    "adbobr_com": "Affiliate programs aggregator.",
+    "vpnbeaver_com": "The usual selling site to which I made the admin panel. The admin panel is written in Laravel using the VueJS framework and bootstrap-vue. The design is not mine, the layout of the admin area is mine."
   },
   "companies": {
     "header": "My career",

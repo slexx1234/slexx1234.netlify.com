@@ -8,7 +8,7 @@
                 </div>
                 <div ref="gallery" class="project__gallery">
                     <div class="item" v-for="(image, i) in images" :key="i" :data-src="image">
-                        <img :src="image" :alt="title">
+                        <img v-if="showGallery" :src="image" :alt="title">
                     </div>
                 </div>
             </template>
@@ -154,15 +154,25 @@
             screenshots: String,
             preview: String,
         },
+        data() {
+            return {
+                showGallery: false,
+            }
+        },
         mounted() {
             if (process.browser && this.$refs.gallery) {
-                $(this.$refs.gallery).lightGallery();
+                $(this.$refs.gallery).lightGallery({
+                    preload: false,
+                });
             }
         },
         methods: {
             openGallery() {
+                this.showGallery = true
                 if (process.browser && this.$refs.gallery) {
-                    $(this.$refs.gallery).find('img').click();
+                    this.$nextTick(() => {
+                        $(this.$refs.gallery).find('img').click();
+                    })
                 }
             },
         }
