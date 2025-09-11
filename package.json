@@ -23,7 +23,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "bootstrap": "^4.1.0",
     "lightgallery": "^1.6.12",
-    "nuxt": "^1.0.0",
+    "nuxt": "^4.0.3",
     "particles.js": "^2.0.0",
     "sass-loader": "^6.0.7",
     "v-webp": "^1.0.3",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
+    "eslint": "^9.32.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
