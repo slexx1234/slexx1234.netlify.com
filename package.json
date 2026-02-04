@@ -35,12 +35,12 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^5.0.1",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgmin": "^1.2.4",
     "gulp-tinify": "^1.0.2",
-    "gulp-webp": "^3.0.0",
-    "node-sass": "^4.13.1"
+    "gulp-webp": "^5.1.0",
+    "node-sass": "^9.0.0"
   }
 }
